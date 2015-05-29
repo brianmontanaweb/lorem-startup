@@ -14,8 +14,8 @@
     @extend %panel-padding;
 
     &--centered {
-      @extend %center-align;
       @extend %panel-padding;
+      @extend %center-align;
     }
   }
 }

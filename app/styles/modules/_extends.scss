@@ -3,18 +3,34 @@
 // ==========================================================================
 
 // Nav Items
+%nav-item-hover{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
 
 %nav-item-disp {
   display: inline-block;
   margin: 0 em(12px);
+  text-transform: lowercase;
 }
 
 %nav-item-link {
-  font-size: em(18px);
+  font-size: em(20px);
   font-weight: $font-weight--light;
   display: block;
   padding: em(8px, 18px);
-  border: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 4px;
+  position: relative;
+  line-height: em(16px, 16px);
+  &:after{
+    @extend %nav-item-hover;
+  }
 }
 
 %nav-item-on {
@@ -25,18 +41,18 @@
 // Headlines
 
 %hdln-prim {
-  color: white;
+  color: darken($bc-carnation, 15%);
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 1px 1px 4px black;
-  font-size: 100px;
-  letter-spacing: 60px;
+  font-size: em(100px, 16px);
+  font-family: $font-family--primary;
 }
 
 %hdln-sec {
   letter-spacing: $letter-space;
   font-weight: $font-weight--thin;
-  font-size: em(24px);
+  font-size: em(20px);
   font-family: $font-family--secondary;
 }
 %hdln-rest{

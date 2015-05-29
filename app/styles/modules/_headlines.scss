@@ -7,6 +7,7 @@
     &__grouped {
       @extend %hdln-prim;
       margin-bottom: 0;
+      line-height: 1em;
     }
   }
   &-secondary {
@@ -15,10 +16,9 @@
     color: palette(grey, light);
     &__grouped {
       @extend %hdln-sec;
-      color: darken($color-primary, 10%);
-      margin-top: em(10px, 24px);
-      margin-bottom: em(54px, 24px);
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      margin: 0;
     }
   }
-
 }

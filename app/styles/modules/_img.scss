@@ -16,6 +16,7 @@
     margin-bottom: em(42px);
     position: relative;
     min-height: 30em;
+    overflow: hidden;
     &--hero {
       position: absolute;
       top: 0;
@@ -25,6 +26,8 @@
       background-size: cover;
       z-index: 1;
       background-color: lighten($bc-lochmara, 45%);
+      background-image: url(/images/zelda-hero.png);
+      filter: blur(5px);
     }
   }
 }

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Triforce';
+    src: url('/fonts/triforce-webfont.eot');
+    src: url('/fonts/triforce-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/triforce-webfont.woff2') format('woff2'),
+         url('/fonts/triforce-webfont.woff') format('woff'),
+         url('/fonts/triforce-webfont.ttf') format('truetype'),
+         url('/fonts/triforce-webfont.svg#triforcetriforce') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .quote{
   &-right{
