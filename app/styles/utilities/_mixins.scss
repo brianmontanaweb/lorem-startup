@@ -66,13 +66,13 @@
       }
       @include background-slider(after) {
         background-color: $color;
-        @include transition(all 0.25s ease-in);
+        @include transition(all 0.15s ease-in);
       }
       &:hover {
         box-shadow: 0 0 0 2px $color;
         color: white;
         &:after {
-          height: 100%;
+          width: calc(100% + 60px);
         }
       }
     }

@@ -25,10 +25,12 @@
 // Headlines
 
 %hdln-prim {
-  font-weight: $font-weight--light;
-  font-size: em(42px);
-  line-height: (46px/42px);
-  margin-top: 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px black;
+  font-size: 100px;
+  letter-spacing: 60px;
 }
 
 %hdln-sec {
@@ -74,12 +76,13 @@
 }
 %btn__after{
   content: "";
-  width: 100%;
+  width: 0%;
+  height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
+  bottom: 0;
+  left: -30px;
+  transform: skewX(45deg);
 }
 // Icons
 
