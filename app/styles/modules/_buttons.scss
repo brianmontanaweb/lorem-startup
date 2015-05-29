@@ -1,0 +1,30 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+%btn-small{
+
+}
+
+//This is general styling for buttons so it loosely hits anything with btn class
+[class^="btn"] {
+  @extend %center-align;
+  @extend %btn;
+  margin-bottom: em(20px, 14px);
+  @media (min-width: 1px) and (max-width: 768px) {
+    width: 100%;
+  }
+  @media (min-width: 769px) {
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+  }
+}
+
+//Styles to overwrite default button styles
+.btn-primary {
+  @include button-colors--primary($ui-colors);
+}
+.btn-secondary {
+  @include button-colors--secondary($ui-colors);
+}

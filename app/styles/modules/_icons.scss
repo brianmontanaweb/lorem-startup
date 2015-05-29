@@ -1,0 +1,31 @@
+// ==========================================================================
+// Icons
+// ==========================================================================
+
+// Logo
+
+.site-logo {
+  @include img-replace("logo-chicago.jpg", 154px, 96px, inline-block);
+  background-size:100%;
+}
+
+// UI
+[class^="icn"]{
+    @extend %icn--ui;
+}
+
+.icn {
+
+  // Nav Toggle
+  &__nav-toggle {
+    width: 25px;
+    height: 17px;
+    border-top: solid 3px palette(grey);
+    border-bottom: solid 3px palette(grey);
+    position: relative;
+    @include p-el(before, 25px, 3px) {
+      background: palette(grey, light);
+      top: 4px;
+    }
+  }
+}
