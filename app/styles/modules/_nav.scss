@@ -50,6 +50,8 @@
       &:hover {
         @extend %nav-item-on;
         @include transition(all .5s ease);
+        animation: navhover .2s infinite;
+
       }
     }
     &--current {

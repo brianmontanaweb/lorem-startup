@@ -23,7 +23,6 @@
   font-weight: $font-weight--light;
   display: block;
   padding: em(8px, 18px);
-  border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   letter-spacing: 4px;
   position: relative;
@@ -36,6 +35,51 @@
 %nav-item-on {
   color: palette(black);
   border-color: $black;
+}
+
+@keyframes navhover{
+  0%{
+    color: palette(grey);
+  }
+  
+  10%{
+    color: $bc-lochmara;
+  }
+
+  20%{
+    color: $bc-mountain-meadow;
+  }
+
+  30%{
+    color: $bc-carnation;
+  }
+
+  40%{
+    color: white;
+  }
+
+  50%{
+    color: $bc-siren;
+  }
+
+  60%{
+    color: $bc-lochmara;
+  }
+
+  70%{
+    color: $bc-mountain-meadow;
+  }
+
+  80%{
+    color: $bc-carnation;
+  }
+
+  90%{
+    color: $bc-candycorn;
+  }
+  100%{
+    color: palette(grey);
+  }
 }
 
 // Headlines
