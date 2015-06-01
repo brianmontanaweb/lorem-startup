@@ -49,6 +49,7 @@
   box-shadow: 0 0 0 ($base-value + 0px) #{$box-color}, 0 ($base-value + 0px) ($base-value + 4px) ($base-value + 0px) $shadow-color;
   &:hover {
     box-shadow: 0 0 0 ($base-value + $final-value) #{$box-color}, 0 ($final-value * 3) ($final-value * 4) ($final-value) $shadow-color;
+    text-shadow: 0 0 4px black;
   }
 }
 
@@ -71,6 +72,7 @@
       &:hover {
         box-shadow: 0 0 0 2px $color;
         color: white;
+        text-shadow: 0 0 4px black;
         &:after {
           width: calc(100% + 60px);
         }

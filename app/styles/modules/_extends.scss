@@ -27,59 +27,10 @@
   letter-spacing: 4px;
   position: relative;
   line-height: em(16px, 16px);
-  &:after{
-    @extend %nav-item-hover;
-  }
 }
 
 %nav-item-on {
-  color: palette(black);
   border-color: $black;
-}
-
-@keyframes navhover{
-  0%{
-    color: palette(grey);
-  }
-  
-  10%{
-    color: $bc-lochmara;
-  }
-
-  20%{
-    color: $bc-mountain-meadow;
-  }
-
-  30%{
-    color: $bc-carnation;
-  }
-
-  40%{
-    color: white;
-  }
-
-  50%{
-    color: $bc-siren;
-  }
-
-  60%{
-    color: $bc-lochmara;
-  }
-
-  70%{
-    color: $bc-mountain-meadow;
-  }
-
-  80%{
-    color: $bc-carnation;
-  }
-
-  90%{
-    color: $bc-candycorn;
-  }
-  100%{
-    color: palette(grey);
-  }
 }
 
 // Headlines
