@@ -1,2 +1,2 @@
-# zelda-startup
-If Zelda was a startup company.
+# lorem-startup
+If Lorem was a startup company.
