@@ -2,7 +2,7 @@
 // Nav
 // ==========================================================================
 
-.menu-toggle{
+.menu-toggle {
   border-top: solid em(2px) palette(grey);
   border-bottom: solid em(2px) palette(grey);
   height: em(20px);
@@ -43,19 +43,42 @@
     @media (min-width: 1px) and (max-width: 600px) {
       display: block;
     }
+    &:after {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+      left: 0;
+      border-bottom-color: transparent;
+      @include transition(all 0.2s ease-out);
+    }
+    &:hover:after,
+    &.current:after {
+      bottom: 0;
+      border-bottom: 1px solid palette(grey);
+      @include transition(all 0.2s ease-out);
+    }
     a {
       color: palette(grey);
       @extend %nav-item-link;
+      & span {
+        text-shadow: 0 0 0 transparent;
+        @include transition(all 0.2s ease-out);
+      }
       &:hover {
-        @extend %nav-item-on;
+        color: palette(black);
+        & span {
+          text-shadow: 0 4px 1px palette(grey, light);
+          @include transition(all 0.2s ease-out);
+        }
       }
     }
-    &--current {
+    &.current {
       @extend %nav-item-disp;
       a {
         color: palette(black);
         @extend %nav-item-link;
-        @extend %nav-item-on;
+
       }
     }
   }

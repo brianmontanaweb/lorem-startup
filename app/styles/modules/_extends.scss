@@ -16,6 +16,7 @@
   display: inline-block;
   margin: 0 em(12px);
   text-transform: lowercase;
+  position: relative;
 }
 
 %nav-item-link {
@@ -23,24 +24,19 @@
   font-weight: $font-weight--light;
   display: block;
   padding: em(8px, 18px);
-  border-bottom: 1px solid transparent;
   letter-spacing: 4px;
   position: relative;
   line-height: em(16px, 16px);
 }
 
-%nav-item-on {
-  border-color: $black;
-}
-
 // Headlines
 
 %hdln-prim {
-  color: darken($bc-carnation, 15%);
+  color: palette(grey, xx-light);
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 1px 1px 4px black;
-  font-size: em(100px, 16px);
+  font-size: em(106px, 16px);
   font-family: $font-family--primary;
 }
 

@@ -120,8 +120,8 @@ gulp.task('serve', ['default'], function () {
     server: 'dist'
   });
 
-  gulp.watch(['app/**/*.html'], ['htmlwatch', reload]);
-  gulp.watch(['app/styles/**/*.{scss, css}'], ['styles', reload]);
+  gulp.watch(['app/**/*.html'], ['htmlwatch', 'critical', reload]);
+  gulp.watch(['app/styles/**/*.{scss, css}'], ['styles', 'htmlwatch', 'critical', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['scripts']);
   gulp.watch(['app/images/**/*'], reload);
 
